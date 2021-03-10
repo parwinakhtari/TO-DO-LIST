@@ -1,15 +1,15 @@
 import "./styles.css";
 import React from "react";
+import CloseIcon from '@material-ui/icons/Close';
  export default function ToDoList(props){
 return(
 <>
 <div className='todo_style'>
   <li className='list_style'>
-<i className=" fa fa-times" aria-hidden='true'
+<CloseIcon className="fa-times" 
   onClick={()=>{
 props.onSelect(props.id)
   }}/>
-  <span> </span>
 {props.text}
 </li>
 </div>
