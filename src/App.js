@@ -2,6 +2,8 @@ import "./styles.css";
 import React, { useState } from "react";
 import ToDoList from "./ToDoList" ;
 import AddIcon from '@material-ui/icons/Add';
+import Button from '@material-ui/core/Button';
+
 
 export default function App() {
   const [Inputlist, setInputlist] = useState("");
@@ -34,7 +36,7 @@ return index!==id ;
             onChange={itemEvent}
             value={Inputlist}
           />
-          <button onClick={listofItems}> <AddIcon/> </button>
+          <Button className='newBtn' onClick={listofItems}> <AddIcon/> </Button>
           <ol>         
 {
   item.map( (itemval,index)=> {

@@ -1,12 +1,12 @@
 import "./styles.css";
 import React from "react";
-import CloseIcon from '@material-ui/icons/Close';
+import DeleteIcon from '@material-ui/icons/Delete';
  export default function ToDoList(props){
 return(
 <>
 <div className='todo_style'>
   <li className='list_style'>
-<CloseIcon className="fa-times" 
+<DeleteIcon className="del" 
   onClick={()=>{
 props.onSelect(props.id)
   }}/>
